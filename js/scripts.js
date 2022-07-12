@@ -7,7 +7,7 @@ fileInput.onchange = () => {
   message.innerHTML = "読み込み中..."
 
   let file = fileInput.files[0];
-  fileReader.readAsText(file, "Shift_JIS");
+  fileReader.readAsText(file, "UTF-8");
 };
 
 // ファイル読み込み時
@@ -27,7 +27,14 @@ fileReader.onload = () => {
     let result = {};
     for (const index in datas) {
       let key = header[index];
+      if(key === "Name") {
+        key = "cardname";
+      }
+      if (key === "言語") {
+        key = "lang";
+      }
       result[key] = datas[index];
+      console.log(key);
     }
     return result;
   });
@@ -40,11 +47,10 @@ fileReader.onload = () => {
   let tbody_html = "";
   for (item of items) {
     tbody_html += `<tr>
-        <td>${item.id}</td>
-        <td>${item.title}</td>
-        <td>${item.url}</td>
-        <td>${item.category}</td>
-        <td>${item.create_date}</td>
+        <td>${item.cardname}</td>
+        <td>${item.Foil}</td>
+        <td>2×2</td>
+        <td>${item.lang}</td>
       </tr>
       `
   }
