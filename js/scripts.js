@@ -26,6 +26,9 @@ fileReader.onload = () => {
     let datas = item.split(',');
     let result = {};
     for (const index in datas) {
+      if (datas == null)  {
+        continue;
+      }
       let key = header[index];
       if(key === "Name") {
         key = "cardname";
@@ -34,27 +37,22 @@ fileReader.onload = () => {
         key = "lang";
       }
       result[key] = datas[index];
-      console.log(key);
     }
     return result;
   });
 
   // テーブル初期化
-  let tbody = document.querySelector('#csv_data_table tbody');
-  tbody.innerHTML = "";
+  const langs = {"日本語":"[JP]","英語":"[EN]" };
 
   //　CSVの内容を表示
-  let tbody_html = "";
+  let textarea = "";
   for (item of items) {
-    tbody_html += `<tr>
-        <td>${item.cardname}</td>
-        <td>${item.Foil}</td>
-        <td>2×2</td>
-        <td>${item.lang}</td>
-      </tr>
-      `
+    if (item.cardname != "") {
+      textarea += "【2×2】" + item.cardname + langs[item.lang] + "\r\n";
+    }
   }
-  tbody.innerHTML = tbody_html;
+  document.getElementById("cardnames").value = textarea;
+  // tbody.innerHTML = tbody_html;
 
   message.innerHTML = items.length + "件のデータを読み込みました。"
 }
