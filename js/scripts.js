@@ -39,14 +39,17 @@ fileReader.onload = () => {
     return result;
   });
 
-  // テーブル初期化
+  // 言語
   const langs = {"日本語":"[JP]","英語":"[EN]" };
+
+// Foil/非Foil
+  const isFoil = {"Yes":"【Foil】", "No": ""};
 
   //　CSVの内容を表示
   let textarea = "";
   for (item of items) {
     if (item.cardname != "") {
-      textarea += "【2×2】" + item.cardname + langs[item.lang] + "\r\n";
+      textarea += isFoil[item.Foil] +"【2×2】" +  item.cardname + langs[item.lang] + "\r\n";
     }
   }
   document.getElementById("cardnames").value = textarea;
