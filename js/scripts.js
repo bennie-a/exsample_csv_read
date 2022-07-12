@@ -17,7 +17,14 @@ fileReader.onload = () => {
   let fileResult = fileReader.result.split('\r\n');
 
   // 先頭行をヘッダとして格納
-  let header = fileResult[0].split(',')
+  let header = fileResult[0].split(',').map(key => {
+    if(key === "Name") {
+      key = "cardname";
+    } else if (key === "言語") {
+      key = "lang";
+    }
+    return key;
+  });
   // 先頭行の削除
   fileResult.shift();
 
@@ -26,16 +33,7 @@ fileReader.onload = () => {
     let datas = item.split(',');
     let result = {};
     for (const index in datas) {
-      if (datas == null)  {
-        continue;
-      }
       let key = header[index];
-      if(key === "Name") {
-        key = "cardname";
-      }
-      if (key === "言語") {
-        key = "lang";
-      }
       result[key] = datas[index];
     }
     return result;
