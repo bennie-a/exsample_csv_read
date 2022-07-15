@@ -18,10 +18,8 @@ fileReader.onload = () => {
 
   // 先頭行をヘッダとして格納
   let header = fileResult[0].split(',').map(key => {
-    if(key === "Name") {
+    if(key == "Name") {
       key = "cardname";
-    } else if (key === "言語") {
-      key = "lang";
     }
     return key;
   });
@@ -49,13 +47,19 @@ fileReader.onload = () => {
   let textarea = "";
   for (item of items) {
     if (item.cardname != "") {
-      textarea += isFoil[item.Foil] +"【2×2】" +  item.cardname + langs[item.lang] + "\r\n";
+      cardname =  isFoil[item.Foil] +"【2×2】" +  item.cardname + langs[item['言語']] ;
+      textarea += "," + cardname + ",,,," + item['価格'] + ",1,1," + item['公開']   + "\r\n";
     }
   }
   document.getElementById("cardnames").value = textarea;
   // tbody.innerHTML = tbody_html;
 
   message.innerHTML = items.length + "件のデータを読み込みました。"
+  // $('#ex-name').load('expansion.html', function(data, status, object) {
+  //   if(status === 'success') {
+  //     console.log('読み込みが正常に行われました');
+  //   }
+  // });
 }
 
 // ファイル読み取り失敗時
