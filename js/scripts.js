@@ -17,7 +17,7 @@ fileReader.onload = () => {
   let fileResult = fileReader.result.split('\r\n');
 
   // 先頭行をヘッダとして格納
-  let header = fileResult[0].split(',').map(key => {
+  let header = fileResult[0].split('\t').map(key => {
     if(key == "Name") {
       key = "cardname";
     }
@@ -28,7 +28,7 @@ fileReader.onload = () => {
 
   // CSVから情報を取得
   items = fileResult.map(item => {
-    let datas = item.split(',');
+    let datas = item.split('\t');
     let result = {};
     for (const index in datas) {
       let key = header[index];
@@ -65,8 +65,14 @@ fileReader.onload = () => {
         if (item.cardname != "") {
           console.log();
           var ex = expansions[item['エキスパンション']];
-          cardname =  isFoil[item.Foil] + ex +  item.cardname + langs[item['言語']] ;
-          pic1 = item['英名'].toLowerCase().replace("\'", "").replace(" ", "_");
+          cardname =  isFoil[item.Foil] + ex +  item.cardname;
+          var lang = langs[item['言語']] ;
+          var en_name = item['英名'];
+          if (lang == '[EN]') {
+            cardname +=  "/" + en_name;
+          }
+          cardname += lang;
+          pic1 = en_name.toLowerCase().replace("\'", "").replace(" ", "_");
           pic2 = pic1 + "_rev";
           textarea += "," + cardname + ",,,," + item['価格'] + ",1" + "," + item['枚数'] + "," +
                       item['公開'] +  "," + pic1 + ".jpg," + pic2 + ".jpg\r\n";
