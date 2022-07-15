@@ -48,7 +48,11 @@ fileReader.onload = () => {
   for (item of items) {
     if (item.cardname != "") {
       cardname =  isFoil[item.Foil] +"【2×2】" +  item.cardname + langs[item['言語']] ;
-      textarea += "," + cardname + ",,,," + item['価格'] + ",1,1," + item['公開']   + "\r\n";
+      pic1 = item['英名'].toLowerCase().replace("\'", "").replace(" ", "_");
+      pic2 = pic1 + "_rev";
+      console.log(pic1);
+      textarea += "," + cardname + ",,,," + item['価格'] + ",1" + "," + item['枚数'] + "," +
+                  item['公開'] +  "," + pic1 + ".jpg," + pic2 + ".jpg\r\n";
     }
   }
   document.getElementById("cardnames").value = textarea;
