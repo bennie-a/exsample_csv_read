@@ -45,25 +45,41 @@ fileReader.onload = () => {
 
   //　CSVの内容を表示
   let textarea = "";
-  for (item of items) {
-    if (item.cardname != "") {
-      cardname =  isFoil[item.Foil] +"【2×2】" +  item.cardname + langs[item['言語']] ;
-      pic1 = item['英名'].toLowerCase().replace("\'", "").replace(" ", "_");
-      pic2 = pic1 + "_rev";
-      console.log(pic1);
-      textarea += "," + cardname + ",,,," + item['価格'] + ",1" + "," + item['枚数'] + "," +
-                  item['公開'] +  "," + pic1 + ".jpg," + pic2 + ".jpg\r\n";
-    }
-  }
-  document.getElementById("cardnames").value = textarea;
-  // tbody.innerHTML = tbody_html;
 
-  message.innerHTML = items.length + "件のデータを読み込みました。"
-  // $('#ex-name').load('expansion.html', function(data, status, object) {
-  //   if(status === 'success') {
-  //     console.log('読み込みが正常に行われました');
-  //   }
-  // });
+  // expansion.xmlの読み込み
+  $.ajax({
+    url: 'expansion.xml',
+    type: 'GET',
+    dataType: 'XML',
+    cache: false,
+    success:function(data) {
+      var expansions = [];
+      $(data).find('row').each(function() {
+        var url = $(this).find('ulink').attr('url');
+        var paras = $(this).find('para').map(function() {
+          return $(this).text();
+        });
+        expansions[url] = "【" + paras[1] + "】";
+      });
+      for (item of items) {
+        if (item.cardname != "") {
+          console.log();
+          var ex = expansions[item['エキスパンション']];
+          cardname =  isFoil[item.Foil] + ex +  item.cardname + langs[item['言語']] ;
+          pic1 = item['英名'].toLowerCase().replace("\'", "").replace(" ", "_");
+          pic2 = pic1 + "_rev";
+          textarea += "," + cardname + ",,,," + item['価格'] + ",1" + "," + item['枚数'] + "," +
+                      item['公開'] +  "," + pic1 + ".jpg," + pic2 + ".jpg\r\n";
+        }
+      }
+      document.getElementById("cardnames").value = textarea;
+      // tbody.innerHTML = tbody_html;
+      message.innerHTML = items.length + "件のデータを読み込みました。";
+    },
+    error:function(err) {
+      console.log(err);
+    }
+  });
 }
 
 // ファイル読み取り失敗時
