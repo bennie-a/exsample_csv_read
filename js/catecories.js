@@ -48,16 +48,18 @@ fileReader.onload = () => {
 // Foil/非Foil
   const isFoil = {"Yes":"【Foil】", "No": ""};
 
-  //　CSVの内容を表示
+  //TSVの内容を表示
   let textarea = "";
   for (item of items){
     let name = item['商品名'];
     if (name == null) {
       continue;
     }
-    name = name.replaceAll('\"', '')
-    console.log(name);
+    let id = item['商品ID'];
+    name = name.replaceAll('\"', '');
+    textarea += id + ',' + name + "\r\n";
   }
+  $('textarea').text(textarea);
   message.innerHTML = items.length + "件のデータを読み込みました。";
 
   // expansion.xmlの読み込み
