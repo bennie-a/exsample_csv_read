@@ -12,18 +12,22 @@
 <body>
   <section class="section">
 
-    <h1 class="title">JavaScriptでCSVファイルを読み込んでテーブルに表示する</h1>
+    <h1 class="title">BASE用商品データ作成</h1>
 
     <div class="columns">
       <div class="column">
-        <article class="message is-primary">
+        <article id = "msg" class="message is-primary">
           <div class="message-body">
             <span id="message">ファイルを選択してください。</span>
           </div>
         </article>
+        <article id = "err" class="message is-danger is-light" >
+          <div class="message-body">
+            <span id="err-massage"></span>
+          </div>
+        </article>
       </div>
     </div>
-
     <div class="columns">
       <div class="column">
         <input id="csv_file" type="file">
@@ -35,10 +39,6 @@
         <textarea id="cardnames" rows="20" cols="100"></textarea>
       </div>
     </div>
-  </section>
-  <section>
-    <h1>エキスパンション名</h1>
-    <div id="ex-name"></div>
   </section>
 
   <script src="js/scripts.js"></script>

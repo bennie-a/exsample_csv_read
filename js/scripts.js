@@ -1,18 +1,28 @@
 let fileInput = document.getElementById('csv_file');
 let message = document.getElementById('message');
 let fileReader = new FileReader();
-
+$('#err').hide();
 // ファイル変更時イベント
 fileInput.onchange = () => {
   message.innerHTML = "読み込み中..."
 
   let file = fileInput.files[0];
+  // ファイル名取得
+  let filename = file.name;
+
+  //ファイル拡張子取得
+  let extension = filename.substr(filename.indexOf("."), 4);
+  if (extension != ".txt") {
+    toErr('タブ区切りの.txtファイルを選択してください。');
+    return;
+  }
   fileReader.readAsText(file, "UTF-8");
 };
 
 // ファイル読み込み時
 let items = [];
 fileReader.onload = () => {
+
   // ファイル読み込み
   let fileResult = fileReader.result.split('\r\n');
 
@@ -48,7 +58,7 @@ fileReader.onload = () => {
 
   // expansion.xmlの読み込み
   $.ajax({
-    url: 'expansion.xml',
+    url: 'xml/expansion.xml',
     type: 'GET',
     dataType: 'XML',
     cache: false,
@@ -92,4 +102,11 @@ fileReader.onload = () => {
 fileReader.onerror = () => {
   items = [];
   message.innerHTML = "ファイル読み取りに失敗しました。"
+}
+
+function toErr(msg) {
+  $('#msg').hide();
+  $('#err-massage').text(msg);
+  $('#err').show();
+
 }
