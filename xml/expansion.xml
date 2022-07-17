@@ -4,40 +4,6 @@
   <para>エキスパンション</para>
   <informaltable frame="all">
     <tgroup cols="10">
-      <thead>
-        <row>
-          <entry>
-            <para>名前</para>
-          </entry>
-          <entry>
-            <para>略称</para>
-          </entry>
-          <entry>
-            <para>BASEカテゴリ名</para>
-          </entry>
-          <entry>
-            <para>BASEID</para>
-          </entry>
-          <entry>
-            <para>フォーマット</para>
-          </entry>
-          <entry>
-            <para>ブロック</para>
-          </entry>
-          <entry>
-            <para>商品移行ボードとのリレーション（エキスパンション） 1</para>
-          </entry>
-          <entry>
-            <para>商品写真とのリレーション（タグ）</para>
-          </entry>
-          <entry>
-            <para>売上管理ボードとのリレーション（エキスパンション）</para>
-          </entry>
-          <entry>
-            <para>進捗ボードとのリレーション（プロパティ）<anchor id="e59de7b9-4a91-4782-b793-27ff3921f922"/></para>
-          </entry>
-        </row>
-      </thead>
       <tbody>
         <row>
           <entry>

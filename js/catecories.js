@@ -42,27 +42,7 @@ fileReader.onload = () => {
     return result;
   });
 
-  //TSVの内容を表示
-  let textarea = "";
-  for (item of items){
-    let name = item['商品名'];
-    if (name == null) {
-      continue;
-    }
-    let id = item['商品ID'];
-    name = name.replaceAll('\"', '');
-    textarea += id + ',' + name + "\r\n";
-    let attrs = name.split(/【(.*?)】/).filter(function(value, index){
-      if (value == '' || value == 'Foil') {
-        return;
-      }
-      return value;
-    });
-    console.log(attrs);
-  }
-  $('textarea').text(textarea);
-  message.innerHTML = items.length + "件のデータを読み込みました。";
-
+  let formats = {"スタンダード":"4243329", "パイオニア": "4243326", "モダン":"4243328", "レガシー":"4243325"};
   //expansion.xmlの読み込み
   $.ajax({
     url: 'xml/expansion.xml',
@@ -72,32 +52,47 @@ fileReader.onload = () => {
     success:function(data) {
       var expansions = [];
       $(data).find('row').each(function() {
-        var url = $(this).find('ulink').attr('url');
-        var paras = $(this).find('para').map(function() {
-          return $(this).text();
-        });
-        expansions[url] = "【" + paras[1] + "】";
+        var paras = $(this).find('para').map(function(index) {
+          var array = [];
+          if (index == 1 || index == 3 || index == 4) {
+            array.push($(this).text());
+          }
+          return array;
       });
-      // for (item of items) {
-      //   if (item.cardname != "") {
-      //     console.log();
-      //     var ex = expansions[item['エキスパンション']];
-      //     cardname =  isFoil[item.Foil] + ex +  item.cardname;
-      //     var lang = langs[item['言語']] ;
-      //     var en_name = item['英名'];
-      //     if (lang == '[EN]') {
-      //       cardname +=  "/" + en_name;
-      //     }
-      //     cardname += lang;
-      //     pic1 = en_name.toLowerCase().replace("\'", "").replace(" ", "_");
-      //     pic2 = pic1 + "_rev";
-      //     textarea += "," + cardname + ",,,," + item['価格'] + ",1" + "," + item['枚数'] + "," +
-      //                 item['公開'] +  "," + pic1 + ".jpg," + pic2 + ".jpg\r\n";
-      //   }
-      // }
-      // document.getElementById("cardnames").value = textarea;
-      // // tbody.innerHTML = tbody_html;
-      // message.innerHTML = items.length + "件のデータを読み込みました。";
+      expansions.push(paras);
+      });
+      //TSVの内容を表示
+      let textarea = "";
+      for (item of items){
+        let name = item['商品名'];
+        if (name == null) {
+          continue;
+        }
+        let id = item['商品ID'];
+        name = name.replaceAll('\"', '');
+        let attrs = name.split(/【(.*?)】/).filter(function(value){
+          if (value == '' || value == 'Foil') {
+            return;
+          }
+          return value;
+        });
+        let attr = attrs[0];
+        let category = expansions.filter(function(value) {
+          if (value[0] == attr) {
+            return value[1];
+          }
+        });
+        // カテゴリIDの取得
+        let exIds = [];
+        let formatId = formats[category[0][2]];
+        if (formatId != null) {
+          exIds.push(formatId);
+        }
+        exIds.push(category[0][1]);
+        textarea += id + ',' + name + ", " +exIds.join(",") + "\r\n";
+      }
+      $('textarea').text(textarea);
+      message.innerHTML = items.length + "件のデータを読み込みました。";
     },
     error:function(err) {
       console.log(err);
