@@ -34,7 +34,7 @@
             <para>売上管理ボードとのリレーション（エキスパンション）</para>
           </entry>
           <entry>
-            <para>進捗ボードとのリレーション（プロパティ）<anchor id="_72e1067d-f680-4f49-a8cc-2e6e7985649e"/></para>
+            <para>進捗ボードとのリレーション（プロパティ）<anchor id="e59de7b9-4a91-4782-b793-27ff3921f922"/></para>
           </entry>
         </row>
       </thead>
@@ -42,23 +42,109 @@
         <row>
           <entry>
             <para>
-              <ulink url="https://www.notion.so/72e1067df6804f49a8cc2e6e7985649e">運命再編</ulink>
+              <ulink url="https://www.notion.so/e59de7b94a914782b79327ff3921f922">レガシー</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>レガシー[]</para>
+          </entry>
+          <entry>
+            <para>4243325</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="_61f5d6a7-96b0-4e09-a3b3-a834231aa22d"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/61f5d6a796b04e09a3b3a834231aa22d">統率者レジェンズ</ulink>
             </para>
           </entry>
           <entry>
-            <para>FRF</para>
+            <para>CMR</para>
           </entry>
           <entry>
-            <para>運命再編[FRF]</para>
+            <para>統率者レジェンズ[CMR]</para>
           </entry>
           <entry><para/></entry>
           <entry>
-            <para>パイオニア</para>
+            <para>統率者</para>
           </entry>
           <entry>
-            <para>タルキール</para>
+            <para>統率者</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/36a437a2410d414a8692e71f25f64306">黒薔薇の棘</ulink>
+            </para>
           </entry>
           <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="_11357d9b-dca1-45bc-8501-78b939768bc6"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2020-11357d9bdca145bc850178b939768bc6">統率者2020</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>C20</para>
+          </entry>
+          <entry>
+            <para>統率者2020[C20]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>統率者</para>
+          </entry>
+          <entry>
+            <para>統率者</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/eb031387a2b44632b1012ce2c1fd25f6">風変わりな果樹園</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="eafa3454-5915-470d-b080-c7c34d32b1a1"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2016-eafa34545915470db080c7c34d32b1a1">統率者2016</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>C16</para>
+          </entry>
+          <entry>
+            <para>統率者2016[C16]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>統率者</para>
+          </entry>
+          <entry>
+            <para>統率者</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2350887e6b1848be9d8d68443c59be22">風変わりな果樹園</ulink>
+            </para>
+          </entry>
           <entry><para/></entry>
           <entry><para/></entry>
           <entry>
@@ -100,6 +186,52 @@
               <ulink url="https://www.notion.so/dc81f4bd0e6e4f05a9ec96390dce5658">息詰まる徴税</ulink>
             </para>
           </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="f3ef2334-cd87-4147-bab9-79f33ace359a"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/f3ef2334cd874147bab979f33ace359a">スタンダード</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>スタンダード[]</para>
+          </entry>
+          <entry>
+            <para>4243329</para>
+          </entry>
+          <entry>
+            <para>スタンダード</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="f6e4925f-fc42-407d-8e74-e981d3e0a520"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/f6e4925ffc42407d8e74e981d3e0a520">無題</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>[]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>レガシー</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
           <entry><para/></entry>
           <entry><para/></entry>
           <entry>
@@ -295,6 +427,56 @@
               <ulink url="https://www.notion.so/2-4726584ace1d4eae9595f0b242e72607">神河予約特典：フェアリートークン(すべそれ版)2枚</ulink>
             </para>
           </entry>
+          <entry>
+            <para><anchor id="_72e1067d-f680-4f49-a8cc-2e6e7985649e"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/72e1067df6804f49a8cc2e6e7985649e">運命再編</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>FRF</para>
+          </entry>
+          <entry>
+            <para>運命再編[FRF]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>タルキール</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="_2feb6bf0-b4f5-4403-8467-366895f2dd12"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2feb6bf0b4f544038467366895f2dd12">パイオニア</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>パイオニア[]</para>
+          </entry>
+          <entry>
+            <para>4243326</para>
+          </entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
           <entry>
             <para><anchor id="_1319b37f-75ed-466f-a521-76fc8a48e243"/></para>
           </entry>
@@ -974,6 +1156,226 @@
             </para>
           </entry>
           <entry>
+            <para><anchor id="e7283105-cb0b-44e0-baa1-ef2f2763cf8c"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2015-e7283105cb0b44e0baa1ef2f2763cf8c">基本セット2015</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>M15</para>
+          </entry>
+          <entry>
+            <para>基本セット2015[M15]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>基本セット</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="dc1dbd58-987c-409a-bb6a-557c9e4abbcc"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2019-dc1dbd58987c409abb6a557c9e4abbcc">基本セット2019</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>M19</para>
+          </entry>
+          <entry>
+            <para>基本セット2019[M19]</para>
+          </entry>
+          <entry>
+            <para>4517401</para>
+          </entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>基本セット</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/9b1baec205784a7c8f04f62456cd6043">ドラゴンの女王、ラスリス</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/1-6f119226da62416f91c23d6ca92dd4b4">ドラゴンの財宝1枚</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para><anchor id="_8f67b6a1-a261-468b-8dbb-1ffdf6548744"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2020-8f67b6a1a261468b8dbb1ffdf6548744">基本セット2020</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>M20</para>
+          </entry>
+          <entry>
+            <para>基本セット2020[M20]</para>
+          </entry>
+          <entry>
+            <para>4517440</para>
+          </entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>基本セット</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/fe6e2f2bac104d10afd8adfdd0db57b7">発現する浅瀬</ulink>,
+              <ulink url="https://www.notion.so/3cc21ed079f44b32a54159f06f9fde3c">天穹の鷲</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="_635643b4-ca64-40d2-a0aa-0c37de6f94ef"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/635643b4ca6440d2a0aa0c37de6f94ef">破滅の刻</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>HOU</para>
+          </entry>
+          <entry>
+            <para>破滅の刻[HOU]</para>
+          </entry>
+          <entry>
+            <para>4517442</para>
+          </entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>アモンケット</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/97c9f4bfa5104a95ac12a68d2c6fe360">圧倒的輝き</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/1-91ed3eadcfd34dd8afbd326b400a5627">永遠衆、ネヘブ1枚</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para><anchor id="e7c0724b-b984-4f1a-802f-7347e4cf032c"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2014-e7c0724bb9844f1a802f7347e4cf032c">基本セット2014</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>M14</para>
+          </entry>
+          <entry>
+            <para>基本セット2014[M14]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>基本セット</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/6a91ac157fb24dc0844e6534bfae7bff">ダークスティールの溶鉱炉</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/1-9faaef53ed6a4df4b4222d85000bd049">ダークスティールの溶鉱炉1枚</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para><anchor id="_24fcac0b-3421-478d-8f9e-abbb34085cb3"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/2021-24fcac0b3421478d8f9eabbb34085cb3">基本セット2021</ulink>
+            </para>
+          </entry>
+          <entry>
+            <para>M21</para>
+          </entry>
+          <entry>
+            <para>基本セット2021[M21]</para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>パイオニア</para>
+          </entry>
+          <entry>
+            <para>基本セット</para>
+          </entry>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/54d85a7a9a5e40a1afb6ca44ebe2b333">天使トークン</ulink>,
+              <ulink url="https://www.notion.so/305a1f48c0504e7bb6f1acd86f5c4261">歴戦の神聖刃</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
+            <para><anchor id="bab8abc6-d10b-444a-b24b-03793ac06830"/></para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <para>
+              <ulink url="https://www.notion.so/bab8abc6d10b444ab24b03793ac06830">モダン</ulink>
+            </para>
+          </entry>
+          <entry><para/></entry>
+          <entry>
+            <para>モダン[]</para>
+          </entry>
+          <entry>
+            <para>4243328</para>
+          </entry>
+          <entry>
+            <para>モダン</para>
+          </entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry><para/></entry>
+          <entry>
             <para><anchor id="dc002d60-5958-451b-aa3a-b4d135290bd2"/></para>
           </entry>
         </row>
@@ -1309,32 +1711,6 @@
           <entry><para/></entry>
           <entry><para/></entry>
           <entry>
-            <para><anchor id="e7283105-cb0b-44e0-baa1-ef2f2763cf8c"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2015-e7283105cb0b44e0baa1ef2f2763cf8c">基本セット2015</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>M15</para>
-          </entry>
-          <entry>
-            <para>基本セット2015[M15]</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>パイオニア</para>
-          </entry>
-          <entry>
-            <para>基本セット</para>
-          </entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry>
             <para><anchor id="_61bd0cc8-4528-45f6-9386-a863339e964f"/></para>
           </entry>
         </row>
@@ -1401,111 +1777,6 @@
             </para>
           </entry>
           <entry><para/></entry>
-          <entry>
-            <para><anchor id="dc1dbd58-987c-409a-bb6a-557c9e4abbcc"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2019-dc1dbd58987c409abb6a557c9e4abbcc">基本セット2019</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>M19</para>
-          </entry>
-          <entry>
-            <para>基本セット2019[M19]</para>
-          </entry>
-          <entry>
-            <para>4517401</para>
-          </entry>
-          <entry>
-            <para>パイオニア</para>
-          </entry>
-          <entry>
-            <para>基本セット</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/9b1baec205784a7c8f04f62456cd6043">ドラゴンの女王、ラスリス</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/1-6f119226da62416f91c23d6ca92dd4b4">ドラゴンの財宝1枚</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para><anchor id="_8f67b6a1-a261-468b-8dbb-1ffdf6548744"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2020-8f67b6a1a261468b8dbb1ffdf6548744">基本セット2020</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>M20</para>
-          </entry>
-          <entry>
-            <para>基本セット2020[M20]</para>
-          </entry>
-          <entry>
-            <para>4517440</para>
-          </entry>
-          <entry>
-            <para>パイオニア</para>
-          </entry>
-          <entry>
-            <para>基本セット</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/fe6e2f2bac104d10afd8adfdd0db57b7">発現する浅瀬</ulink>,
-              <ulink url="https://www.notion.so/3cc21ed079f44b32a54159f06f9fde3c">天穹の鷲</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry>
-            <para><anchor id="_635643b4-ca64-40d2-a0aa-0c37de6f94ef"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/635643b4ca6440d2a0aa0c37de6f94ef">破滅の刻</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>HOU</para>
-          </entry>
-          <entry>
-            <para>破滅の刻[HOU]</para>
-          </entry>
-          <entry>
-            <para>4517442</para>
-          </entry>
-          <entry>
-            <para>パイオニア</para>
-          </entry>
-          <entry>
-            <para>アモンケット</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/97c9f4bfa5104a95ac12a68d2c6fe360">圧倒的輝き</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/1-91ed3eadcfd34dd8afbd326b400a5627">永遠衆、ネヘブ1枚</ulink>
-            </para>
-          </entry>
           <entry>
             <para><anchor id="ba0f7e62-02a6-43c8-9623-bec4aa0a5cbe"/></para>
           </entry>
@@ -1735,40 +2006,6 @@
           <entry>
             <para>
               <ulink url="https://www.notion.so/3-d1d52b1de1c34119b9ae8972f89f9ffa">流刑への道3枚</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para><anchor id="e7c0724b-b984-4f1a-802f-7347e4cf032c"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2014-e7c0724bb9844f1a802f7347e4cf032c">基本セット2014</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>M14</para>
-          </entry>
-          <entry>
-            <para>基本セット2014[M14]</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>パイオニア</para>
-          </entry>
-          <entry>
-            <para>基本セット</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/6a91ac157fb24dc0844e6534bfae7bff">ダークスティールの溶鉱炉</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/1-9faaef53ed6a4df4b4222d85000bd049">ダークスティールの溶鉱炉1枚</ulink>
             </para>
           </entry>
           <entry>
@@ -2974,66 +3211,6 @@
             </para>
           </entry>
           <entry>
-            <para><anchor id="eafa3454-5915-470d-b080-c7c34d32b1a1"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2016-eafa34545915470db080c7c34d32b1a1">統率者2016</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>C16</para>
-          </entry>
-          <entry>
-            <para>統率者2016[C16]</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>統率者</para>
-          </entry>
-          <entry>
-            <para>統率者</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2350887e6b1848be9d8d68443c59be22">風変わりな果樹園</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry>
-            <para><anchor id="_11357d9b-dca1-45bc-8501-78b939768bc6"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2020-11357d9bdca145bc850178b939768bc6">統率者2020</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>C20</para>
-          </entry>
-          <entry>
-            <para>統率者2020[C20]</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>統率者</para>
-          </entry>
-          <entry>
-            <para>統率者</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/eb031387a2b44632b1012ce2c1fd25f6">風変わりな果樹園</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry>
             <para><anchor id="_09494f21-c8f0-4cb8-9380-51aebd5654d4"/></para>
           </entry>
         </row>
@@ -3085,67 +3262,6 @@
           <entry>
             <para>
               <ulink url="https://www.notion.so/96e0784d528447679542b5d64ee2ce97">ブレンタンの炉の世話人</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry>
-            <para><anchor id="_24fcac0b-3421-478d-8f9e-abbb34085cb3"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/2021-24fcac0b3421478d8f9eabbb34085cb3">基本セット2021</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>M21</para>
-          </entry>
-          <entry>
-            <para>基本セット2021[M21]</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>パイオニア</para>
-          </entry>
-          <entry>
-            <para>基本セット</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/54d85a7a9a5e40a1afb6ca44ebe2b333">天使トークン</ulink>,
-              <ulink url="https://www.notion.so/305a1f48c0504e7bb6f1acd86f5c4261">歴戦の神聖刃</ulink>
-            </para>
-          </entry>
-          <entry><para/></entry>
-          <entry><para/></entry>
-          <entry>
-            <para><anchor id="_61f5d6a7-96b0-4e09-a3b3-a834231aa22d"/></para>
-          </entry>
-        </row>
-        <row>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/61f5d6a796b04e09a3b3a834231aa22d">統率者レジェンズ</ulink>
-            </para>
-          </entry>
-          <entry>
-            <para>CMR</para>
-          </entry>
-          <entry>
-            <para>統率者レジェンズ[CMR]</para>
-          </entry>
-          <entry><para/></entry>
-          <entry>
-            <para>統率者</para>
-          </entry>
-          <entry>
-            <para>統率者</para>
-          </entry>
-          <entry>
-            <para>
-              <ulink url="https://www.notion.so/36a437a2410d414a8692e71f25f64306">黒薔薇の棘</ulink>
             </para>
           </entry>
           <entry><para/></entry>
