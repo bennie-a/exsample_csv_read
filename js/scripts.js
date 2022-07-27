@@ -12,8 +12,8 @@ fileInput.onchange = () => {
 
   //ファイル拡張子取得
   let extension = filename.substr(filename.indexOf("."), 4);
-  if (extension != ".txt") {
-    toErr('タブ区切りの.txtファイルを選択してください。');
+  if (extension != ".txt" && extension != ".tsv") {
+    toErr('タブ区切りの.txtファイルかtsvファイルを選択してください。');
     return;
   }
   fileReader.readAsText(file, "UTF-8");
@@ -48,14 +48,13 @@ fileReader.onload = () => {
   });
 
   // 言語
-  const langs = {"日本語":"[JP]","英語":"[EN]" };
+  const langs = {"日本語":"[JP]","英語":"[EN]", "繁体中国語":"[CT]" };
 
 // Foil/非Foil
   const isFoil = {"Yes":"【Foil】", "No": ""};
 
   //　CSVの内容を表示
   let textarea = "";
-
   // expansion.xmlの読み込み
   $.ajax({
     url: 'xml/expansion.xml',
@@ -71,9 +70,12 @@ fileReader.onload = () => {
         });
         expansions[url] = "【" + paras[1] + "】";
       });
+      let item_count = 0;
       for (item of items) {
+        if (item.Status != 'BASE登録予定') {
+          continue;
+        }
         if (item.cardname != "") {
-          console.log();
           var ex = expansions[item['エキスパンション']];
           cardname =  isFoil[item.Foil] + ex +  item.cardname;
           var lang = langs[item['言語']] ;
@@ -82,15 +84,16 @@ fileReader.onload = () => {
             cardname +=  "/" + en_name;
           }
           cardname += lang;
-          pic1 = en_name.toLowerCase().replace("\'", "").replace(" ", "_");
+          pic1 = en_name.replace("\'", "").replaceAll(" ", "_");
           pic2 = pic1 + "_rev";
           textarea += "," + cardname + ",,,," + item['価格'] + ",1" + "," + item['枚数'] + "," +
-                      item['公開'] +  "," + pic1 + ".jpg," + pic2 + ".jpg\r\n";
+                      '1' +  "," + toJpg(pic1) + "," + toJpg(pic2) + "\r\n";
+          item_count++
         }
       }
       document.getElementById("cardnames").value = textarea;
       // tbody.innerHTML = tbody_html;
-      message.innerHTML = items.length + "件のデータを読み込みました。";
+      message.innerHTML = item_count + "件のデータを読み込みました。";
     },
     error:function(err) {
       console.log(err);
@@ -104,6 +107,9 @@ fileReader.onerror = () => {
   message.innerHTML = "ファイル読み取りに失敗しました。"
 }
 
+function toJpg(str) {
+    return str + '-min.jpg';
+}
 function toErr(msg) {
   $('#msg').hide();
   $('#err-massage').text(msg);
